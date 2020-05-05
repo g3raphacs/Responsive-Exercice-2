@@ -1,0 +1,26 @@
+/* Glyphter */
+@font-face {
+    font-family: 'Glyphter';
+    src: url('../fonts/Glyphter.eot');
+    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Glyphter.woff') format('woff'),
+         url('../fonts/Glyphter.ttf') format('truetype'),
+         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+    [class*='glyph-']:before{
+    display: inline-block;
+    font-family: 'Glyphter';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+    }
+    .glyph-deviantart:before{content:'\0042';}
+    .glyph-facebook:before{content:'\0043';}
+    .glyph-pinterest:before{content:'\0044';}
+    .glyph-twitter:before{content:'\0045';}
+    .glyph-vtick:before{content:'\0046';}
+  /* ICONS>>-------------------------------------------------- */
