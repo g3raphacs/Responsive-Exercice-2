@@ -32,11 +32,6 @@
 /* font sizes */
 .fSize20{ font-size: 1.33rem}
 
-/* font positioning */
-.TXTcenter{text-align: center;}
-.TXTleft{text-align: left;}
-.TXTjustif{text-align: justify;}
-.TXTlineL{line-height: 1.88rem;}
 /*FONTS>>___________________________________________________________________________________*/
 
 /*COLORVALUES<<___________________________________________________________________________________*/
@@ -50,8 +45,7 @@
 .BCKsec     {   background-color: var(--Col_Secondary); }
 .BCKsecDark {   background-color: var(--Col_SecondaryDark); }
 
-/* classes border sep */
-.sepDown{border-bottom: 1px solid rgba(0, 0, 0,0.2);}
+
 /*COLORVALUES>>___________________________________________________________________________________*/
 
 /*FLEX<<____________________________________________________________________________________*/
@@ -62,13 +56,14 @@
 /*FLEX>>____________________________________________________________________________________*/
 
 /* Generic  */
+html{font-size: 15px;}
 body{
     margin:             0px;
     display:            flex;
     flex-direction:     column;
     justify-content:    center;
     font-family:        'Rubik', sans-serif;
-    font-size:          15px;
+    font-size:          1rem;
     color:              white;
     font-weight:        normal;
     min-height:         100vh;
@@ -86,6 +81,7 @@ li{list-style: none;}
     background-size: contain;
 }
 .footer{align-items: flex-start; padding:100px 0px}
+footer>div:first-child{padding-top: 70px;}
 .footSide{
     box-sizing: border-box;
     flex: 0 27%;
@@ -190,6 +186,10 @@ form label{display: none;}
 }
 #lastfooter>div{flex:       0 60%;}
 #logo{width: 94px; height: 32px;}
+
+.fSize20{ font-size: 1.4rem}
+body{font-size: 1.1rem;}
+#lastfooter{font-size: 1rem;}
 }
 
 /* M _________________________________________________________________________________*/
@@ -202,6 +202,19 @@ form label{display: none;}
 }
 #lastfooter>div{flex:       0 70%;}
 #logo{width: 113px; height: 39px; background-position: center;}
+
+.fSize20{ font-size: 1.5rem}
+body{font-size: 1.2rem;}
+.footSide:first-child p{line-height: 3rem;}
+.btn_social{
+    color:              white;
+    background-color: var(--Col_Primary);
+}
+#submitbutton{
+    background-color:         var(--Col_Primary);
+    color:                    white;
+}
+.footerLinks a{color: var(--Col_Primary);}
 }
 
 /* S _________________________________________________________________________________*/
@@ -226,14 +239,20 @@ form{width:100%}
 #logo{width: 170px; height: 59px; background-position: center;}
 #lastfooter>div{flex:0 100%; order: -1; padding-bottom:25px;}
 #lastfooter>p{flex:0 100%; text-align: center;}
+#lastfooter{font-size: 0.9rem;}
+
+.fSize20{ font-size: 1.7rem}
+body{font-size: 1.3rem;}
+.btn_social{
+    color:              white;
+    background-color: var(--Col_Primary);
+}
 }
 
 /* XS _________________________________________________________________________________*/
 @media (max-width: 575.98px) {
 .container{  margin: 0px 1vw;   }
-.socialBox{
-    width: 90%;
-}
+.socialBox{width: 90%;}
 }
 
 
