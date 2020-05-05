@@ -194,21 +194,46 @@ form label{display: none;}
 
 /* M _________________________________________________________________________________*/
 @media (max-width: 991.98px) {
-
 .container{  margin: 0px 3vw;   }
+.footer>section:nth-child(2),.footer>section:nth-child(3){flex:0 23%;}
+.footer>section:nth-child(4){flex:0 44%;}
+.socialBox{
+    width: 40%;
+}
+#lastfooter>div{flex:       0 70%;}
+#logo{width: 113px; height: 39px; background-position: center;}
 }
 
 /* S _________________________________________________________________________________*/
 @media (max-width: 767.98px) {
-
 .container{  margin: 0px 2vw;   }
-
+.footer>div{text-align: center; display: flex; flex-direction: column; align-items: center;}
+.footer>section:nth-child(2),.footer>section:nth-child(3){flex:0 48%; text-align: center;}
+.footer>section:nth-child(4){flex:0 100%;text-align: center; display: flex; flex-direction: column; align-items: center;padding: 7vh 0px;border-bottom: 2px solid white}
+.socialBox{
+    width: 65%;
+}
+.btn_social{
+    width:              60px;
+    height:             60px;
+    align-items:        center;
+    justify-content:    center;
+    border-radius:      5px;
+    color:              var(--Col_SecondaryLight);
+    font-size: 1.3rem;
+}
+form{width:100%}
+#logo{width: 170px; height: 59px; background-position: center;}
+#lastfooter>div{flex:0 100%; order: -1; padding-bottom:25px;}
+#lastfooter>p{flex:0 100%; text-align: center;}
 }
 
 /* XS _________________________________________________________________________________*/
 @media (max-width: 575.98px) {
-
 .container{  margin: 0px 1vw;   }
+.socialBox{
+    width: 90%;
+}
 }
 
 
