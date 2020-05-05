@@ -44,10 +44,11 @@
     --Col_Primary           : #FF8400;
     --Col_Secondary         : #103268;
     --Col_SecondaryLight    : #9db5db;
-    --Col_SecondaryDark     : #08172f;
+    --Col_SecondaryDark     : #0c2142;
 }
 /* classes background */
-.BCKsec{background-color: var(--Col_Secondary);}
+.BCKsec     {   background-color: var(--Col_Secondary); }
+.BCKsecDark {   background-color: var(--Col_SecondaryDark); }
 
 /* classes border sep */
 .sepDown{border-bottom: 1px solid rgba(0, 0, 0,0.2);}
@@ -65,11 +66,15 @@
 
 /* Generic  */
 body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Rubik', sans-serif;
     font-size: 15px;
     color: white;
     font-weight: normal;
-    height: 100%;
+    min-height: 100vh;
     background-color: black;
 }
 a{text-decoration: none; color: white;}
@@ -123,7 +128,7 @@ form label{display: none;}
 }
 #submitbutton{
     margin-top: 15px;
-    background-color: var(--Col_Secondary);
+    background-color: var(--Col_SecondaryDark);
     color: var(--Col_SecondaryLight);
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
