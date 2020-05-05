@@ -43,8 +43,8 @@
 :root{
     --Col_Primary           : #FF8400;
     --Col_Secondary         : #103268;
-    --Col_SecondaryLight    : #9db5db;
-    --Col_SecondaryDark     : #0c2142;
+    --Col_SecondaryLight    : #7384a0;
+    --Col_SecondaryDark     : #112c58;
 }
 /* classes background */
 .BCKsec     {   background-color: var(--Col_Secondary); }
@@ -79,6 +79,12 @@ ul{padding-left: 0px;}
 li{list-style: none;}
 
 /*Footer bar 1>>____________________________________________________________________________________*/
+#logo{
+    background-image: url("/img/Logo.svg");
+    width:78px; height:26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .footer{align-items: flex-start; padding:100px 0px}
 .footSide{
     box-sizing: border-box;
@@ -164,9 +170,26 @@ form label{display: none;}
 
 .container{  margin: 0px 5vw;}
 
-.footer>div{flex:0 100%; width: 100vh;}
-.footer>section:nth-child(2),.footer>section:nth-child(3){flex:0 27%;}
+.footer>div{flex:0 100%; width: 100vh; padding-bottom: 7vh;border-bottom: 2px solid white;}
+.footer>section:nth-child(2),.footer>section:nth-child(3){flex:0 23%; order:1; text-align: right;}
 .footer>section:nth-child(4){flex:0 40%;}
+
+.socialBox{
+    width: 30%;
+    margin: 0px;
+    justify-content: space-between;
+}
+.btn_social{
+    width:              55px;
+    height:             55px;
+    align-items:        center;
+    justify-content:    center;
+    border-radius:      5px;
+    color:              var(--Col_SecondaryLight);
+    font-size: 1.3rem;
+}
+#lastfooter>div{flex:       0 60%;}
+#logo{width: 94px; height: 32px;}
 }
 
 /* M _________________________________________________________________________________*/
