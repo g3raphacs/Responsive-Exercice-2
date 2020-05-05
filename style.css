@@ -96,6 +96,11 @@ li{list-style: none;}
     line-height: 2.5rem;
 }
 .footerLinks a:hover{color: var(--Col_Primary);}
+
+.socialBox{
+    width: 65%;
+    justify-content: space-between;
+}
 .btn_social{
     width:              45px;
     height:             45px;
@@ -103,7 +108,6 @@ li{list-style: none;}
     justify-content:    center;
     border-radius:      5px;
     color:              var(--Col_SecondaryLight);
-    margin-right:       10px;
 }
 .btn_social p{margin: 0px;}
 .btn_social:hover{
@@ -160,12 +164,28 @@ form label{display: none;}
 
 .container{  margin: 0px 5vw;}
 
-body{font-size: 1.15rem;}
-.fSize20{font-size: 1.6rem; }
-
 .footer>div{flex:0 100%; width: 100vh;}
-.footer>section:nth-child(2),.footer>section:nth-child(3){flex:0 48%;}
-.footer>section:nth-child(4){flex:0 100%;}
+.footer>section:nth-child(2),.footer>section:nth-child(3){flex:0 27%;}
+.footer>section:nth-child(4){flex:0 40%;}
+}
+
+/* M _________________________________________________________________________________*/
+@media (max-width: 991.98px) {
+
+.container{  margin: 0px 3vw;   }
+}
+
+/* S _________________________________________________________________________________*/
+@media (max-width: 767.98px) {
+
+.container{  margin: 0px 2vw;   }
+
+}
+
+/* XS _________________________________________________________________________________*/
+@media (max-width: 575.98px) {
+
+.container{  margin: 0px 1vw;   }
 }
 
 
