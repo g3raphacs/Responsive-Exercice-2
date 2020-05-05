@@ -2,21 +2,21 @@
 @font-face {
     font-family: 'Glyphter';
     src: url('../fonts/Glyphter.eot');
-    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Glyphter.woff') format('woff'),
-         url('../fonts/Glyphter.ttf') format('truetype'),
-         url('../fonts/Glyphter.svg#Glyphter') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: url('../fonts/Glyphter.eot?#iefix')    format('embedded-opentype'),
+         url('../fonts/Glyphter.woff')          format('woff'),
+         url('../fonts/Glyphter.ttf')           format('truetype'),
+         url('../fonts/Glyphter.svg#Glyphter')  format('svg');
+    font-weight:    normal;
+    font-style:     normal;
     }
     [class*='glyph-']:before{
-    display: inline-block;
-    font-family: 'Glyphter';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    display:                    inline-block;
+    font-family:                'Glyphter';
+    font-style:                 normal;
+    font-weight:                normal;
+    line-height:                1;
+    -webkit-font-smoothing:     antialiased;
+    -moz-osx-font-smoothing:    grayscale
     }
     .glyph-deviantart:before{content:'\0042';}
     .glyph-facebook:before{content:'\0043';}
@@ -24,8 +24,8 @@
     .glyph-twitter:before{content:'\0045';}
     .glyph-vtick:before{content:'\0046';}
 /* ICONS>>-------------------------------------------------- */
-/*FONTS<<___________________________________________________________________________________*/
 
+/*FONTS<<___________________________________________________________________________________*/
 /* font types */
 .fontNorm{font-weight: 400;}
 .fontMed{font-weight: 500;}
@@ -58,58 +58,54 @@
 .flexSideSide{display: flex; justify-content: space-between; align-items: center;}
 .flexCol{display: flex;flex-direction: column; justify-content: space-between;align-items: center;}
 .flex{display: flex; align-items: center;}
+.flexWrap{flex-wrap: wrap;}
 /*FLEX>>____________________________________________________________________________________*/
-
-/*CONTAINERS<<____________________________________________________________________________________*/
-.container{margin: 0 18vw; max-width: 1230px;}
-/*CONTAINERS>>____________________________________________________________________________________*/
 
 /* Generic  */
 body{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 15px;
-    color: white;
-    font-weight: normal;
-    min-height: 100vh;
-    background-color: black;
+    margin:             0px;
+    display:            flex;
+    flex-direction:     column;
+    justify-content:    center;
+    font-family:        'Rubik', sans-serif;
+    font-size:          15px;
+    color:              white;
+    font-weight:        normal;
+    min-height:         100vh;
+    background-color:   black;
 }
 a{text-decoration: none; color: white;}
 ul{padding-left: 0px;}
 li{list-style: none;}
 
-
 /*Footer bar 1>>____________________________________________________________________________________*/
 .footer{align-items: flex-start; padding:100px 0px}
 .footSide{
     box-sizing: border-box;
-    max-width: 313px;
-    width: 27%;
+    max-width:  313px;
+    width:      27%;
 }
 .footCenter{
     box-sizing: border-box;
-    max-width: 170px;
-    width: 15%;
+    max-width:  170px;
+    width:      15%;
 }
 .footCenter ul{
     list-style: none;
-    padding: 0px;
+    padding:    0px;
 }
 .footerLinks a{
     line-height: 2.5rem;
 }
 .footerLinks a:hover{color: var(--Col_Primary);}
 .btn_social{
-    width:45px;
-    height:45px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    color: var(--Col_SecondaryLight);
-    margin-right: 10px;
+    width:              45px;
+    height:             45px;
+    align-items:        center;
+    justify-content:    center;
+    border-radius:      5px;
+    color:              var(--Col_SecondaryLight);
+    margin-right:       10px;
 }
 .btn_social p{margin: 0px;}
 .btn_social:hover{
@@ -119,27 +115,27 @@ li{list-style: none;}
 }
 form label{display: none;}
 #mail{
-    height: 56px;
-    width: 100%;
-    text-align: center;
-    border-radius: 28px;
-    margin-top: 20px;
-    border: none;
+    height:             56px;
+    width:              100%;
+    text-align:         center;
+    border-radius:      28px;
+    margin-top:         20px;
+    border:             none;
 }
 #submitbutton{
-    margin-top: 15px;
-    background-color: var(--Col_SecondaryDark);
-    color: var(--Col_SecondaryLight);
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 1.06rem;
-    padding:17px 40px;
-    border-radius: 28px;
-    border: none;
+    margin-top:         15px;
+    background-color:   var(--Col_SecondaryDark);
+    color:              var(--Col_SecondaryLight);
+    font-family:        'Rubik', sans-serif;
+    font-weight:        500;
+    font-size:          1.06rem;
+    padding:            17px 40px;
+    border-radius:      28px;
+    border:             none;
 }
 #submitbutton:hover{
-    background-color: var(--Col_Primary);
-    color: white;
+    background-color:         var(--Col_Primary);
+    color:                    white;
     box-shadow: 0px 14px 21px rgba(255, 132, 0, 0.22);
 }
 /*Footer bar 1<<____________________________________________________________________________________*/
@@ -148,9 +144,49 @@ form label{display: none;}
 #lastfooter{padding:30px 0 70px 0;}
 #lastfooter>p{flex: 0 30%;}
 #lastfooter>div{
-    flex: 0 70%;
-    max-width: 425px;
+    flex:       0 70%;
+    max-width:  425px;
 }
 #lastfooter a{color: var(--Col_Gray);}
 #lastfooter a:hover{color: var(--Col_Primary);}
 /*Footer bar 3>>____________________________________________________________________________________*/
+
+
+/* RESPONSIVE_________________________________________________________________________*/
+
+/* XL ________________________________________________________________________________*/
+.container{margin: 0 auto; max-width: 1230px;}
+
+
+/* L _________________________________________________________________________________*/
+@media (max-width: 1199.98px) {
+
+.container{  margin: 0px 5vw;   }
+
+body{font-size: 1.15rem;}
+.fSize20{font-size: 1.6rem; }
+
+
+}
+
+/* M _________________________________________________________________________________*/
+@media (max-width: 991.98px) {
+
+.container{  margin: 0px 3vw;   }
+}
+
+/* S _________________________________________________________________________________*/
+@media (max-width: 767.98px) {
+
+.container{  margin: 0px 2vw;   }
+
+
+body{font-size: 1.25rem;}
+.fSize20{font-size: 1.8rem; }
+}
+
+/* XS _________________________________________________________________________________*/
+@media (max-width: 575.98px) {
+
+.container{  margin: 0px 1vw;   }
+}
