@@ -1,4 +1,4 @@
-/* Glyphter */
+/* ICONS<<-------------------------------------------------- */
 @font-face {
     font-family: 'Glyphter';
     src: url('../fonts/Glyphter.eot');
@@ -23,4 +23,56 @@
     .glyph-pinterest:before{content:'\0044';}
     .glyph-twitter:before{content:'\0045';}
     .glyph-vtick:before{content:'\0046';}
-  /* ICONS>>-------------------------------------------------- */
+/* ICONS>>-------------------------------------------------- */
+/* font types */
+.fontNorm{font-weight: 400;}
+.fontMed{font-weight: 500;}
+/* font sizes */
+.fSize20{ font-size: 1.33rem}
+
+/* font positioning */
+.TXTcenter{text-align: center;}
+.TXTleft{text-align: left;}
+.TXTjustif{text-align: justify;}
+.TXTlineL{line-height: 1.88rem;}
+/*FONTS>>___________________________________________________________________________________*/
+/*COLORVALUES<<___________________________________________________________________________________*/
+:root{
+    --Col_Black: #2E2E2E;
+    --Col_Gray: #5E5E5E;
+    --Col_GrayLight: #DEDEDE;
+    --Col_Primary: #FF8400;
+    --Col_PrimaryAlpha: rgba(255, 132, 0, 0.1);
+}
+/* classes text */
+.TXTblack{color: var(--Col_Black);}
+.TXTgray{color: var(--Col_Gray);}
+.TXTprim{color: var(--Col_Primary);}
+.TXTwhite{color:white;}
+/* classes background */
+.BCKblack{background-color: var(--Col_Black);}
+.BCKgray{background-color: var(--Col_Gray);}
+.BCKgrayLight{background-color: var(--Col_GrayLight);}
+.BCKprim{background-color: var(--Col_Primary);}
+.BCKprimAlpha{background-color: var(--Col_PrimaryAlpha);}
+.BCKwhite{background-color:white;}
+/* shadows */
+.shadowOrange{box-shadow: 0px 14px 21px rgba(255, 132, 0, 0.22);}
+.shadowGray{box-shadow: 7px 0px 27px rgba(0, 0, 0, 0.10);}
+.blockOver:hover{box-shadow: 7px 0px 27px rgba(0, 0, 0, 0.20);}
+/* classes border sep */
+.sepDown{border-bottom: 1px solid rgba(0, 0, 0,0.2);}
+/*COLORVALUES>>___________________________________________________________________________________*/
+
+/* Generic  */
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: normal;
+    height: 100%;
+    background-color: black;
+}
+a{text-decoration: none; color: white;}
+ul{padding-left: 0px;}
+li{list-style: none;}
